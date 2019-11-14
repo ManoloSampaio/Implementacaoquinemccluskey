@@ -9,7 +9,7 @@ O cortex M0 será responsável por criar as entradas no circuito lógico e receb
 A equação simplificada será obtida pela aplicação do algorítimo de Quine McCluskey utilizando a tebela verdade recebida e ira mostrar a equação lógica simplificada correspondente ao sistema analisado.<br>A equação simplificada vai ser mostrada juntamente com os CIs que podem ser utilizado no circuito simplificado.<br> 
 ![alt text](https://github.com/ManoloSampaio/Implementacaoquinemccluskey/blob/master/Diagrama%20de%20Blocos.png)
 ## Organização das atividades:
-- Carlos Alfredo :Repassar o código de python para C.<br>
+- Carlos Alfredo :Repassar o código de python para C.[Feito]<br>
 - Emmanuel Sampaio :Desenvolver a interface que vai ser utilizada para mostrar o circuito simplificado
 - Eduardo Serpa :Realizar o processo da interface da greenpill com o computador.
 ## Acompanhando a atividade:

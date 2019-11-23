@@ -1,0 +1,17 @@
+;
+int power(int base,int expoente);
+void append_int(int vetor1[],int vetor2[],int len_vetor1,int len_vetor2);
+int len_string(char string[]);
+void string_copy(char string_raiz[],char string[]);
+void append_string(char vetor1[],char vetor2[]);
+void inverter_string(char string[],int len_string);
+void dec2bin(int decimal,char binario[]);
+int posicao_simplificar(char entrada1[],char entrada2[]);
+int combinar(char input1[],char input2[],char resposta[]);
+void traduzir(char numerico[],char booleano[]);
+int buscarstring(char string_raiz[],char string_elemento[]);
+void gerar_entradas(int tabela_verdade[],int tam_tabela,char entradas[]);
+int  elemento_entrada(char entradas[],int indice,char retorno[]);
+void AlgoritmoQM(char entradas[],char entradas_futuras[],char solucao[],int n);
+void traduzir_solucao(char solucao[],char solucao_traduzida[],int n);
+void simplificar_tabela(int tabela_verdade[],char retorno[],int n);

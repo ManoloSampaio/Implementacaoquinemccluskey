@@ -17,6 +17,16 @@ Passo 1. Obter a tabela verdade do circuito.
 
 Passo 2. Para todas as posições da tabela verdade cuja saída do circuito seja 1(pois estamos trabalhando com soma de produtos, caso estivéssemos trabalhando com produto de somas usaríamos 0) criamos o seu respectivo mintermo, que é a versão binária da posição na tabela verdade. Por exemplo:
 
+|A|B|C|X|
+|----|----|----|----|
+|0|0|0|0|
+|0|0|1|0|
+|0|1|0|1|
+|0|1|1|0|
+|1|0|0|1|
+|1|0|1|0|
+|1|1|0|1|
+|1|1|1|1|
 Na tabela acima os mintermos são: 010,100,110,111.
 
 Passo 3. Agora devemos simplificar os mintermos obtidos através de combinações. Dois mintermos se combinam caso haja apenas um algarismo diferente entre eles. O resultado da combinação de 2 mintermos é um novo mintermo similar à eles, porém com um “-” no algarismo que eles diferem. Usando o exemplo anterior:

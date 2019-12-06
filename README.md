@@ -62,13 +62,4 @@ O pior caso, onde o número de mintermos é o maior possível, é justamente o c
 Para economizar memória, reciclaremos os vetores usados para armazenar os mintermos, sendo assim serão necessários 2 vetores(um para guardar os mintermos atuais e outro para guardar os mintermos que surgiram das combinações dos atuais) com um tamanho igual ao pior caso de alocação de memória para um grupo de mintermos.
 Suponha que estejamos na K-ésima iteração do algoritmo, onde cada mintermo possui k “-” em seus termos e os outros n-k termos podem ser 0 ou 1. No pior caso(onde todas as combinações estão presentes) existem <a href="https://www.codecogs.com/eqnedit.php?latex={n&space;\choose&space;k&space;}&space;2^{n-k}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{n&space;\choose&space;k&space;}&space;2^{n-k}" title="{n \choose k } 2^{n-k}" /></a> mintermos, onde cada mintermo ocupa n+1 espaços de memória(n algarismos e 1 para as divisórias entre mintermos). Logo deve-se escolher criar 2 vetores cujo tamanho seja o valor máximo de:
 <a href="https://www.codecogs.com/eqnedit.php?latex={n&space;\choose&space;k}2^{n-k}(n&plus;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{n&space;\choose&space;k}2^{n-k}(n&plus;1)" title="{n \choose k}2^{n-k}(n+1)" /></a>
-## Acompanhando a atividade:
-|Semana|Dias|Descrição da atividade|
-|----|----|----|
-|Semana 1|19-25|EU SEI QUE VCS ESTÃO NA SETIC|
-|Semana 2|26-1| JÁ PASSOU 1 SEMANA|
-|Semana 3|2-8 | JÁ PASSOU 15 DIAS|
-|Semana 4|9-15| ESTAMOS ATRASADOS OU ESTAMOS DE BOA?|
-|Semana 5|16-22| É BOM TA PERTO DO FIM|
-|Semana 6|23-29| DEAD FUCKING LINE|
-
+A função tamanho_entradas(int n),implementada em AlgoritmoQM, calcula o máximo dessa função para um n escolhido.

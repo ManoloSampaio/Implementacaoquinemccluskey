@@ -32,22 +32,33 @@ Passo 2. Para todas as posições da tabela verdade cuja saída do circuito seja
 Na tabela acima os mintermos são: 010,100,110,111.
 
 Passo 3. Agora devemos simplificar os mintermos obtidos através de combinações. Dois mintermos se combinam caso haja apenas um algarismo diferente entre eles. O resultado da combinação de 2 mintermos é um novo mintermo similar à eles, porém com um “-” no algarismo que eles diferem. Usando o exemplo anterior:
+
 010 + 110 = -10
+
 100 + 110 = 1-0
+
 110 + 111 = 11-
 
 Passo 4. Caso um dos mintermos não participe de nenhuma combinação, ele deve ser adicionado à equação de simplificação do circuito. Agora devemos realizar o passo 3 novamente utilizando os novos mintermos, até que não hajam mais novos mintermos.
 
 Continuando o exemplo:
+
 -10 *(não há combinações possíveis)
+
 1-0 *(não há combinações possíveis)
+
 11- *(não há combinações possíveis)
+
 Como -10, 1-0 e 11- não são utilizados em nenhuma combinação, solução: -10,1-0,11-. Como não existem novos mintermos o algoritmo terminou e a solução é: -10,1-0,11-.
 
 Passo 5. Para traduzir da forma binária para a forma booleana basta realizar as seguintes substituições: Onde tem ‘-’ não se coloca nada, onde tem 0 se coloca a forma barrada da variável, onde tem 1 se coloca a variável. Como trabalhamos com soma de produtos, cada termo da solução é um produto de variáveis e a solução completa é a soma da tradução desses termos. Utilizando o exemplo:
+
 -10 -> BC’
+
 1-0 -> AC’
+
 11-> AB
+
 Solução: BC’ + AC’ + AB
 
 OBS: Entenda-se X’ como X barrado.

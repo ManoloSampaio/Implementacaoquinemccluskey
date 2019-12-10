@@ -25,11 +25,6 @@ unsigned int equivalencia [20][2]={
     	{GPIOA,GPIO_PIN_9}
 };
 
-
-
-void delay (unsigned long ms){
-	HAL_Delay(ms);
-}
 void digitalWrite (int pino, int valor){
 	GPIO_TypeDef *p;
 	p = (GPIO_TypeDef *)equivalencia[pino][0];
